@@ -8,5 +8,11 @@ namespace PhoneBook.Core.Abstractions
 {
     public interface IEntity
     {
+        int Id { get; set; }
+    }
+    public interface IAuditable
+    {
+        DateTime CreatedAt { get; set; }
+        DateTime? UpdatedAt { get; set; }
     }
 }
