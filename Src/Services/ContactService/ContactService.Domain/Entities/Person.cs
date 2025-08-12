@@ -7,7 +7,6 @@ namespace ContactService.Domain.Entities
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
         public string Company { get; set; } = string.Empty;
-
         public ICollection<ContactInfo> ContactInfos { get; set; } = new List<ContactInfo>();
     }
 }

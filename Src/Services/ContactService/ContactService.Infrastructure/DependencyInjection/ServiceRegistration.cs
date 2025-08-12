@@ -1,11 +1,11 @@
-﻿using ContactService.Infrastructure.Persistence.Context;
+﻿using ContactService.Infrastructure.Persistence.Abstract.UnitOfWorks;
+using ContactService.Infrastructure.Persistence.Context;
 using ContactService.Infrastructure.Persistence.Repositories.Abstract;
 using ContactService.Infrastructure.Persistence.Repositories.Concrete;
-using ContactService.Persistence.UnitOfWorks.Concrete;
+using ContactService.Infrastructure.Persistence.UnitOfWorks.Concrete;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using PhoneBook.Core.Abstractions.UnitOfWorks;
 namespace ContactService.Infrastructure.DependencyInjection
 {
     public static class ServiceRegistration

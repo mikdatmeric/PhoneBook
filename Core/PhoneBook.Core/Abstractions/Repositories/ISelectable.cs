@@ -4,6 +4,7 @@ namespace PhoneBook.Core.Abstractions.Repositories
 {
     public interface ISelectable<T> where T : class, IEntity
     {
+        Task<T> GetByIdAsync(int id);
         Task<T> GetByIdAsync(Guid id);
         Task<IEnumerable<T>> GetAllAsync();
         IQueryable<T> GetAllQueryable();

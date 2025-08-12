@@ -25,11 +25,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Persistence\Repositories\Concrete\" />
-    <Folder Include="Persistence\UnitOfWorks\Abstract\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ContactService.Domain\ContactService.Domain.csproj" />
   </ItemGroup>
 
