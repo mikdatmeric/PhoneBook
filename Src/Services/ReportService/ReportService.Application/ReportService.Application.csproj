@@ -8,15 +8,12 @@
 
   <ItemGroup>
     <PackageReference Include="MediatR" Version="13.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.8" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ReportService.Infrastructure\ReportService.Infrastructure.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Features\Reports\Handlers\" />
-    <Folder Include="Features\Reports\Queries\" />
+    <ProjectReference Include="..\..\..\..\Shared\Shared.Events\Shared.Events.csproj" />
+    <ProjectReference Include="..\ReportService.Domain\ReportService.Domain.csproj" />
   </ItemGroup>
 
 </Project>

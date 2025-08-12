@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using PhoneBook.Core.Concrete.Utulities.Results;
-using ReportService.Application.Dtos;
-using ReportService.Application.Services.Abstract;
+using ReportService.Application.Abstract.Services;
+using ReportService.Application.Concrete.Dtos;
 
 namespace ReportService.API.Controllers
 {

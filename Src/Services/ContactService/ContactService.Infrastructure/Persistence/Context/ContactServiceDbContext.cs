@@ -17,6 +17,30 @@ namespace ContactService.Infrastructure.Persistence.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
+            modelBuilder.Entity<Person>()
+               .HasKey(r => r.Id);
+
+            modelBuilder.Entity<Person>()
+                .Property(r => r.Id)
+                .ValueGeneratedOnAdd(); // Otomatik artan
+
+            modelBuilder.Entity<Person>()
+                .Property(r => r.Id)
+                .UseSerialColumn(); // PostgreSQL için SERIAL gibi davranır
+
+            modelBuilder.Entity<ContactInfo>()
+               .HasKey(r => r.Id);
+
+            modelBuilder.Entity<ContactInfo>()
+                .Property(r => r.Id)
+                .ValueGeneratedOnAdd(); // Otomatik artan
+
+            modelBuilder.Entity<ContactInfo>()
+                .Property(r => r.Id)
+                .UseSerialColumn(); // PostgreSQL için SERIAL gibi davranır
+
+
+
             // Kişi - İletişim bilgileri ilişkilendirmesi
             modelBuilder.Entity<Person>()
                 .HasMany(p => p.ContactInfos)

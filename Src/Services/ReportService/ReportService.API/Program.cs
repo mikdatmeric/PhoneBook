@@ -1,6 +1,7 @@
-﻿using ContactService.Application.DependencyInjection;
-using Microsoft.OpenApi.Models;
-using ReportService.Infrastructure.DependencyInjection;
+﻿using Microsoft.OpenApi.Models;
+using ReportService.Application.Concrete.DependencyInjection;
+using ReportService.Application.Concrete.Features.Reports.Handlers;
+using ReportService.Infrastructure.Concrete.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 

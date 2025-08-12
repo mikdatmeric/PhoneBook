@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ReportService.Domain\ReportService.Domain.csproj" />
+    <ProjectReference Include="..\ReportService.Application\ReportService.Application.csproj" />
   </ItemGroup>
 
 </Project>
